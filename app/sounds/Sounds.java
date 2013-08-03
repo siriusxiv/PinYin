@@ -29,7 +29,7 @@ public class Sounds {
 			sounds.add(files[i].getName().replace(".mp3", ""));
 		}
 		Collections.sort(sounds);
-		return select(sounds).subList(0, 10);
+		return select(sounds);
 	}
 	
 	static List<String> select(List<String> sounds){

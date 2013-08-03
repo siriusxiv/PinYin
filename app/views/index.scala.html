@@ -1,6 +1,11 @@
 @(sounds: List[String])
 @main("PinYin trainer"){
-		
+<style>
+audio{
+	position:relative;
+	top:6px;
+}
+</style>	
 	<ol>
 	@for(i:Int <- 0 to sounds.size()-1){
 		<li>
@@ -14,6 +19,7 @@
 		</li>
 	}
 	</ol>
+	<a href="/">Do it again</a>
 <script>
 function show(i){
 	$('#resultat'+i).attr('style','display:inline');

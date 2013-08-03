@@ -1,6 +1,11 @@
 @(sounds: List[String])
 @main("PinYin trainer"){
-		
+<style>
+audio{
+	position:relative;
+	top:6px;
+}
+</style>	
 	<ol>
 	@for(i:Int <- 0 to sounds.size()-1){
 		<li>
@@ -10,7 +15,7 @@
  		Your browser does not support the audio tag.
 		</audio>
 		<button onClick="show(@i)">Show answer</button>
-		<span id="resulat@i" style="display:none">@sounds.get(i)</span>
+		<span id="resultat@i" style="display:none">@sounds.get(i)</span>
 		</li>
 	}
 	</ol>
