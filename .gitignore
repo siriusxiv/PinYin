@@ -16,6 +16,8 @@ dist
 /RUNNING_PID
 /.settings
 
+*~
+
 #################
 ## Eclipse
 #################
