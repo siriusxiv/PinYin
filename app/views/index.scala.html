@@ -20,10 +20,26 @@ audio{
 		</li>
 	}
 	</ol>
+	<button id="showall" onClick="showAll()">Show all answers</button>
 	<a href="/">Do it again</a>
 <script>
 function show(i){
 	$('#resultat'+i).attr('style','display:inline');
+}
+function hide(i){
+	$('#resultat'+i).attr('style','display:none');
+}
+function showAll(){
+	for(var i = 0;i<10;i++){
+		show(i);
+	}
+	$('#showall').replaceWith('<button id="showall" onClick="hideAll()">Hide all answers</button>');
+}
+function hideAll(){
+	for(var i = 0;i<10;i++){
+		hide(i);
+	}
+	$('#showall').replaceWith('<button id="showall" onClick="showAll()">Show all answers</button>');
 }
 </script>
 }
