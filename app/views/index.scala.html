@@ -1,21 +1,22 @@
-@(sounds: List[String])
+@(voices: List[String])
 @main("PinYin trainer"){
 <style>
 audio{
 	position:relative;
 	top:6px;
 }
-</style>	
+</style>
+	<h2>Here you can test your understanding of Chinese syllables</h2>
 	<ol>
-	@for(i:Int <- 0 to sounds.size()-1){
+	@for(i:Int <- 0 to voices.size()-1){
 		<li>
 		<audio controls>
-  		<source src="/assets/sounds/@{sounds.get(i)+".ogg"}" type="audio/ogg">
-  		<source src="/assets/sounds/@{sounds.get(i)+".mp3"}" type="audio/mpeg">
+  		<source src="/assets/sounds/@{voices.get(i)+".ogg"}" type="audio/ogg">
+  		<source src="/assets/sounds/@{voices.get(i)+".mp3"}" type="audio/mpeg">
  		Your browser does not support the audio tag.
 		</audio>
 		<button onClick="show(@i)">Show answer</button>
-		<span id="resultat@i" style="display:none">@sounds.get(i)</span>
+		<span id="resultat@i" style="display:none" class="answer">@sounds.Converter.toAccent(voices.get(i))</span>
 		</li>
 	}
 	</ol>
