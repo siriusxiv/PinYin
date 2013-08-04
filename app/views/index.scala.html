@@ -22,6 +22,10 @@ audio{
 	</ol>
 	<button id="showall" onClick="showAll()">Show all answers</button>
 	<a href="/">Do it again</a>
+	<p>Play the syllable you want : (type sha4, le5 or bian1 for example)</p>
+<input id="texte" type="text"><button onClick="play()">GO !</button>
+<p id="dummy"></p>
+<div id="overDummy"></div>
 <script>
 function show(i){
 	$('#resultat'+i).attr('style','display:inline');
@@ -40,6 +44,13 @@ function hideAll(){
 		hide(i);
 	}
 	$('#showall').replaceWith('<button id="showall" onClick="showAll()">Show all answers</button>');
+}
+function play(){
+	var content = $('#texte').val();
+	playSound('/assets/sounds/'+content+'.mp3');
+}
+function playSound(soundfile){
+	document.getElementById('dummy').innerHTML="<embed src=\""+soundfile+"\" autostart=\"true\" loop=\"false\" />";
 }
 </script>
 }

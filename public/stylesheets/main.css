@@ -6,3 +6,16 @@ html{
 	font-size:130%;
 	color:red;
 }
+
+#dummy{
+	position:absolute;
+	z-index:1;
+}
+
+#overDummy{
+	position:absolute;
+	background-color:lightyellow;
+	height:250px;
+	width:100%;
+	z-index:2;
+}
