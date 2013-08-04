@@ -30,13 +30,13 @@ function hide(i){
 	$('#resultat'+i).attr('style','display:none');
 }
 function showAll(){
-	for(var i = 0;i<10;i++){
+	for(var i = 0;i<@voices.size();i++){
 		show(i);
 	}
 	$('#showall').replaceWith('<button id="showall" onClick="hideAll()">Hide all answers</button>');
 }
 function hideAll(){
-	for(var i = 0;i<10;i++){
+	for(var i = 0;i<@voices.size();i++){
 		hide(i);
 	}
 	$('#showall').replaceWith('<button id="showall" onClick="showAll()">Show all answers</button>');

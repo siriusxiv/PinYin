@@ -788,6 +788,201 @@ public class Converter {
 			default:
 				return errorToneReport();
 			}
+		case "zha":
+			switch(tone){
+			case 1:
+				return "zhā";
+			case 2:
+				return "zhá";
+			case 3:
+				return "zhǎ";
+			case 4:
+				return "zhà";
+			default:
+				return errorToneReport();
+			}
+		case "zhai":
+			switch(tone){
+			case 1:
+				return "zhāi";
+			case 2:
+				return "zhái";
+			case 3:
+				return "zhǎi";
+			case 4:
+				return "zhài";
+			default:
+				return errorToneReport();
+			}
+		case "zhao":
+			switch(tone){
+			case 1:
+				return "zhāo";
+			case 2:
+				return "zháo";
+			case 3:
+				return "zhǎo";
+			case 4:
+				return "zhào";
+			default:
+				return errorToneReport();
+			}
+		case "zhan":
+			switch(tone){
+			case 1:
+				return "zhān";
+			case 2:
+				return "zhán";
+			case 3:
+				return "zhǎn";
+			case 4:
+				return "zhàn";
+			default:
+				return errorToneReport();
+			}
+		case "zhang":
+			switch(tone){
+			case 1:
+				return "zhāng";
+			case 2:
+				return "zháng";
+			case 3:
+				return "zhǎng";
+			case 4:
+				return "zhàng";
+			default:
+				return errorToneReport();
+			}
+		case "cha":
+			switch(tone){
+			case 1:
+				return "chā";
+			case 2:
+				return "chá";
+			case 3:
+				return "chǎ";
+			case 4:
+				return "chà";
+			default:
+				return errorToneReport();
+			}
+		case "chai":
+			switch(tone){
+			case 1:
+				return "chāi";
+			case 2:
+				return "chái";
+			case 3:
+				return "chǎi";
+			case 4:
+				return "chài";
+			default:
+				return errorToneReport();
+			}
+		case "chao":
+			switch(tone){
+			case 1:
+				return "chāo";
+			case 2:
+				return "cháo";
+			case 3:
+				return "chǎo";
+			case 4:
+				return "chào";
+			default:
+				return errorToneReport();
+			}
+		case "chan":
+			switch(tone){
+			case 1:
+				return "chān";
+			case 2:
+				return "chán";
+			case 3:
+				return "chǎn";
+			case 4:
+				return "chàn";
+			default:
+				return errorToneReport();
+			}
+		case "chang":
+			switch(tone){
+			case 1:
+				return "chāng";
+			case 2:
+				return "cháng";
+			case 3:
+				return "chǎng";
+			case 4:
+				return "chàng";
+			default:
+				return errorToneReport();
+			}
+		case "sha":
+			switch(tone){
+			case 1:
+				return "shā";
+			case 2:
+				return "shá";
+			case 3:
+				return "shǎ";
+			case 4:
+				return "shà";
+			default:
+				return errorToneReport();
+			}
+		case "shai":
+			switch(tone){
+			case 1:
+				return "shāi";
+			case 2:
+				return "shái";
+			case 3:
+				return "shǎi";
+			case 4:
+				return "shài";
+			default:
+				return errorToneReport();
+			}
+		case "shao":
+			switch(tone){
+			case 1:
+				return "shāo";
+			case 2:
+				return "sháo";
+			case 3:
+				return "shǎo";
+			case 4:
+				return "shào";
+			default:
+				return errorToneReport();
+			}
+		case "shan":
+			switch(tone){
+			case 1:
+				return "shān";
+			case 2:
+				return "shán";
+			case 3:
+				return "shǎn";
+			case 4:
+				return "shàn";
+			default:
+				return errorToneReport();
+			}
+		case "shang":
+			switch(tone){
+			case 1:
+				return "shāng";
+			case 2:
+				return "sháng";
+			case 3:
+				return "shǎng";
+			case 4:
+				return "shàng";
+			default:
+				return errorToneReport();
+			}
 		case "rao":
 			switch(tone){
 			case 1:
@@ -1503,6 +1698,19 @@ public class Converter {
 			default:
 				return errorToneReport();
 			}
+		case "ei":
+			switch(tone){
+			case 1:
+				return "ēi";
+			case 2:
+				return "éi";
+			case 3:
+				return "ěi";
+			case 4:
+				return "èi";
+			default:
+				return errorToneReport();
+			}
 		case "en":
 			switch(tone){
 			case 1:
@@ -1617,6 +1825,19 @@ public class Converter {
 				return "pěng";
 			case 4:
 				return "pèng";
+			default:
+				return errorToneReport();
+			}
+		case "me":
+			switch(tone){
+			case 1:
+				return "mē";
+			case 2:
+				return "mé";
+			case 3:
+				return "mě";
+			case 4:
+				return "mè";
 			default:
 				return errorToneReport();
 			}

@@ -3,7 +3,6 @@ package sounds;
 import java.io.File;
 import java.io.FilenameFilter;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -28,11 +27,10 @@ public class Sounds {
 		for(int i = 0; i<files.length ; i++){
 			sounds.add(files[i].getName().replace(".mp3", ""));
 		}
-		Collections.sort(sounds);
-		return select(sounds);
+		return select10(sounds);
 	}
 	
-	static List<String> select(List<String> sounds){
+	private static List<String> select10(List<String> sounds){
 		List<String> _10sounds = new ArrayList<String>();
 		int M = sounds.size();
 		Random rand = new Random();
