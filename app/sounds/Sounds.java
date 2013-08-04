@@ -10,7 +10,7 @@ import java.util.Random;
 
 public class Sounds {
 	
-	public static List<String> getAll(){
+	public static List<String> get10(){
 		List<String> sounds = new ArrayList<String>();
 		File folder = new File(play.Play.application().path().toString() + "//public//sounds");
 		FilenameFilter filter = new FilenameFilter(){

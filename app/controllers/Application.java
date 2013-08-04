@@ -9,10 +9,9 @@ import sounds.Sounds;
 import views.html.index;
 
 public class Application extends Controller {
-
-	static List<String> sounds = Sounds.getAll();
 	
     public static Result index() {
+		List<String> sounds = Sounds.get10();
         return ok(index.render(sounds));
     }
   
