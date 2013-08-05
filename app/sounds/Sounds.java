@@ -9,9 +9,11 @@ import java.util.Random;
 
 public class Sounds {
 	
-	public static List<String> get10(){
+	public static List<String> get10(){/*
 		List<String> sounds = new ArrayList<String>();
-		File folder = new File(play.Play.application().path().toString() + "//public//sounds");
+		String path = "/home/malik/PinYin/public/sounds";
+		File folder = new File(path);
+		System.out.println(path);
 		FilenameFilter filter = new FilenameFilter(){
 			@Override
             public boolean accept(File dir, String name) {
@@ -27,7 +29,8 @@ public class Sounds {
 		for(int i = 0; i<files.length ; i++){
 			sounds.add(files[i].getName().replace(".mp3", ""));
 		}
-		return select10(sounds);
+		Test.genere(sounds);*/
+		return select10(Genere.copyString());
 	}
 	
 	private static List<String> select10(List<String> sounds){
@@ -39,4 +42,5 @@ public class Sounds {
 		}
 		return _10sounds;
 	}
+	
 }
