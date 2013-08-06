@@ -1,4 +1,4 @@
-@(voices: List[String])
+@(voices: List[String],language: String)
 @main("PinYin trainer"){
 <style>
 audio{
@@ -6,24 +6,25 @@ audio{
 	top:6px;
 }
 </style>
-	<h2>Here you can test your understanding of Chinese syllables</h2>
+	<h2>@langs.Language.set(language,"title")</h2>
 	<ol>
 	@for(i:Int <- 0 to voices.size()-1){
 		<li>
 		<audio controls>
   		<source src="/assets/sounds/@{voices.get(i)+".ogg"}" type="audio/ogg">
   		<source src="/assets/sounds/@{voices.get(i)+".mp3"}" type="audio/mpeg">
- 		Your browser does not support the audio tag.
+ 		@langs.Language.set(language,"not-supported")
 		</audio>
-		<button onClick="show(@i)">Show answer</button>
+		<button onClick="show(@i)">@langs.Language.set(language,"show")</button>
 		<span id="resultat@i" style="display:none" class="answer">@sounds.Converter.toAccent(voices.get(i))</span>
 		</li>
 	}
 	</ol>
-	<button id="showall" onClick="showAll()">Show all answers</button>
-	<a href="/">Do it again</a>
-	<p>Play the syllable you want : (type sha4, le5 or bian1 for example)</p>
-<input id="texte" type="text"><button onClick="play()">GO !</button>
+	<button id="showall" onClick="showAll()">@langs.Language.set(language,"showall")</button>
+	<a href="/">@langs.Language.set(language,"again")</a>
+	<p>@langs.Language.set(language,"play-exp")</p>
+<input id="texte" type="text"><button onClick="play()">@langs.Language.set(language,"go")</button>
+<p class="warning">@langs.Language.set(language,"warning")</p>
 <p id="dummy"></p>
 <div id="overDummy"></div>
 <script>
@@ -37,13 +38,13 @@ function showAll(){
 	for(var i = 0;i<@voices.size();i++){
 		show(i);
 	}
-	$('#showall').replaceWith('<button id="showall" onClick="hideAll()">Hide all answers</button>');
+	$('#showall').replaceWith('<button id="showall" onClick="hideAll()">@langs.Language.set(language,"hideall")</button>');
 }
 function hideAll(){
 	for(var i = 0;i<@voices.size();i++){
 		hide(i);
 	}
-	$('#showall').replaceWith('<button id="showall" onClick="showAll()">Show all answers</button>');
+	$('#showall').replaceWith('<button id="showall" onClick="showAll()">@langs.Language.set(language,"showall")</button>');
 }
 function play(){
 	var content = $('#texte').val();

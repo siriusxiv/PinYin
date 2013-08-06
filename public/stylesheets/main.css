@@ -7,6 +7,10 @@ html{
 	color:red;
 }
 
+.warning{
+	font-size:60%;
+}
+
 #dummy{
 	position:absolute;
 	z-index:1;
