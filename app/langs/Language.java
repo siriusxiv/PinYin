@@ -9,6 +9,7 @@ public class Language {
 		List<String> languages = new ArrayList<String>();
 		languages.add("en");
 		languages.add("fr");
+		languages.add("ja");
 		return languages;
 	}
 	
@@ -75,6 +76,31 @@ public class Language {
 				return "GO !";
 			case "warning":
 				return "Si vous avez un quelconque problème, passez juste à Mozilla Firefox.";
+			default:
+				return "ERROR content";
+			}
+		case "ja":
+			switch(content){
+			case "name":
+				return "日本語";
+			case "title":
+				return "このページで、中国語の発音の認識を試すことが出来ます。";
+			case "not-supported":
+				return "あなたのブラウザーはダメなんだよ！古いじゃん!";
+			case "show":
+				return "答えを表示";
+			case "showall":
+				return "答えを全員表示";
+			case "hideall":
+				return "答えを全員隠す";
+			case "again":
+				return "またやろう";
+			case "play-exp":
+				return "中国語に存在する音を聞こう (sha4かle5、bian1なんかを書いて下さい)";
+			case "go":
+				return "聞く";
+			case "warning":
+				return "何か問題があれば、Mozilla Firefoxを使っていいですよ。";
 			default:
 				return "ERROR content";
 			}
