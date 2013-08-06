@@ -1,0 +1,3 @@
+bees app:deploy -a siriusxiv/pinyintraining -t play2 PinYin.zip
+export BEES_HOME=~/cloudbees-sdk
+export PATH=$PATH:$BEES_HOME
