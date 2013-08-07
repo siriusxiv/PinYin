@@ -1,3 +1,4 @@
+/*
 package sounds;
 
 import java.io.FileWriter;
@@ -33,11 +34,13 @@ public class Test {
 		page+="return strs\n}\n}";
 		return page;
 	}
-	/*
+	
 	private static void copyString(){
 		List<String> strs = new ArrayList<String>();
 		strs.add("xu1");
-	}*/
+		...
+	}
 	
 	
 }
+*/

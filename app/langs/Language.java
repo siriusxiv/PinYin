@@ -10,6 +10,8 @@ public class Language {
 		languages.add("en");
 		languages.add("fr");
 		languages.add("ja");
+		languages.add("zh");
+		languages.add("es");
 		return languages;
 	}
 	
@@ -61,7 +63,7 @@ public class Language {
 			case "title":
 				return "Vous pouvez ici tester votre compréhension des syllabes chinoises";
 			case "not-supported":
-				return "Votre browser ne supporte pas le tag audio. Autrement dit, il pue. Changez-en et utilisez Mozilla Firefox !";
+				return "Votre navigateur web ne supporte pas le tag audio. Autrement dit, il pue. Changez-en et utilisez Mozilla Firefox !";
 			case "show":
 				return "Montrer la réponse";
 			case "showall":
@@ -101,6 +103,56 @@ public class Language {
 				return "聞く";
 			case "warning":
 				return "何か問題があれば、Mozilla Firefoxを使っていいですよ。";
+			default:
+				return "ERROR content";
+			}
+		case "zh":
+			switch(content){
+			case "name":
+				return "中文";
+			case "title":
+				return "您可以在此测试和学习拼音";
+			case "not-supported":
+				return "您的浏览器不支持音频";
+			case "show":
+				return "显示答案";
+			case "showall":
+				return "显示所有答案";
+			case "hideall":
+				return "隐藏所有答案";
+			case "again":
+				return "再来一次";
+			case "play-exp":
+				return "输入您想听到的发音：（例如 sha4，le5）";
+			case "go":
+				return "开始";
+			case "warning":
+				return "如果您有任何问题，请尝试使用火狐浏览器。";
+			default:
+				return "ERROR content";
+			}
+		case "es":
+			switch(content){
+			case "name":
+				return "Español";
+			case "title":
+				return "En este sitio puede probar su comprensión de las sílabas chinas";
+			case "not-supported":
+				return "Su navegador no soporta el audio tag. Cambie de navegador y use Mozilla Firefox!";
+			case "show":
+				return "Mostrar la respuesta";
+			case "showall":
+				return "Mostrar todas las respuestas";
+			case "hideall":
+				return "Ocultar todas las respuestas";
+			case "again":
+				return "Hacerlo de nuevo";
+			case "play-exp":
+				return "Escuche la sílaba que desea (escriba sha4, le5 o sea bian1 por ejemplo)";
+			case "go":
+				return "GO !";
+			case "warning":
+				return "Si usted tiene cualquier problema, vaya a Mozilla Firefox.";
 			default:
 				return "ERROR content";
 			}

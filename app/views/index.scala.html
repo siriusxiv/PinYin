@@ -1,11 +1,5 @@
 @(voices: List[String],language: String)
 @main("PinYin trainer"){
-<style>
-audio{
-	position:relative;
-	top:6px;
-}
-</style>
 	<h2>@langs.Language.set(language,"title")</h2>
 	<ol>
 	@for(i:Int <- 0 to voices.size()-1){

@@ -2,6 +2,11 @@ html{
 	background-color:lightyellow;
 }
 
+audio{
+	position:relative;
+	top:6px;
+}
+
 .answer{
 	font-size:130%;
 	color:red;
