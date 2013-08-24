@@ -23,7 +23,9 @@ public class Application extends Controller {
     }
     
     public static Result changeLanguage(String language){
-    	session("lang",language);
+    	if(Language.exists(language)){
+    		session("lang",language);
+    	}
     	return redirect(routes.Application.index());
     }
   

@@ -86,23 +86,23 @@ public class Language {
 			case "name":
 				return "日本語";
 			case "title":
-				return "このページで、中国語の発音の認識を試すことが出来ます。";
+				return "ここでは、あなたの中国語の音節の理解度を試すことが出来ます。";
 			case "not-supported":
-				return "あなたのブラウザーはダメなんだよ！古いじゃん!";
+				return "あなたのブラウザはダメなんだよ！古いじゃん!";
 			case "show":
 				return "答えを表示";
 			case "showall":
-				return "答えを全員表示";
+				return "答えを全て表示";
 			case "hideall":
-				return "答えを全員隠す";
+				return "答えを全て非表示";
 			case "again":
-				return "またやろう";
+				return "もう一度";
 			case "play-exp":
-				return "中国語に存在する音を聞こう (sha4かle5、bian1なんかを書いて下さい)";
+				return "中国語の音を聞こう (sha4かle5、bian1などを書いて下さい)";
 			case "go":
 				return "聞く";
 			case "warning":
-				return "何か問題があれば、Mozilla Firefoxを使っていいですよ。";
+				return "問題がある場合は、Mozilla Firefoxを推奨します。";
 			default:
 				return "ERROR content";
 			}
